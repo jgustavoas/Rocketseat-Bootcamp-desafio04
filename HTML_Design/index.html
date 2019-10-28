@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Twitter</title>
+    <meta name="author" content="Your Name">
+    <meta name="description" content="Example description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f2f2f2;
+            font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+            text-rendering: optimizeLegibility !important;
+            -webkit-font-smoothing: antialiased !important;
+        }
+
+        header {
+            height: 50px;
+            background: #7159c1;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 20px;
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        header .headerContent {
+            max-width: 1170px;
+            margin: 0 auto;
+            padding: 0 30px;            
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        header div.rightCorner {
+            display: flex;
+            align-items: center;
+        }
+
+        header div.rightCorner img {
+            margin: 0 5px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        .postCard {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            background: #fff;
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 10px 2px rgba(100, 100, 100, 0.25);
+            border-radius: 3px;
+            padding: 20px;
+            padding-bottom: 0px;
+        }
+        .postCard img {
+            margin-right: 5px;
+            height: 35px;
+            flex-shrink: 0;
+        }          
+        .postCard .postUser {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .postCard .postUser p {
+            display: flex;
+            flex-direction: column;
+        }
+        .postCard .postText {
+            color: #444;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .postCard .postComment {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .postCard .postComment p {
+            display: flex;
+            flex-direction: column;            
+            background: #eee;
+            font-size: 13px;
+            border-radius: 21px;
+            padding: 15px;
+        }
+        .postCard .postComment .avatar {
+            width: 25px;
+        }
+        
+        footer{
+            background: #7159c1;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="headerContent">
+                <img src="./rocketseat.svg" />
+            <div class="rightCorner">
+                <span>Meu perfil</span>
+                <img src="./account_circle-24px.svg" />
+            </div>
+        </div>
+    </header>
+    <main>
+            <div class="postCard">
+                <div class="postUser">
+                    <img class="avatar" src="./account_circle-24px.svg" /> 
+                    <p>José Gustavo<small>25 out 2019</small></p>
+                </div>
+                
+                <div class="postText"><p>Alguém sabe se a Rocketseat está contratando?</p></div>
+                
+                <div class="postComment">
+                    <img class="avatar" src="./account_circle-24px.svg" />
+                    <p><strong>Diego Fernandes</strong><small>25 out 2019</small><br><i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper ex non lacus posuere, vel placerat tellus eleifend."</i></p>
+                </div>
+            </div>               
+        
+        <div class="postCard">
+                <div class="postUser">
+                    <img class="avatar" src="./account_circle-24px.svg" /> 
+                    <p>José Gustavo<small>25 out 2019</small></p>
+                </div>
+                
+                <div class="postText"><p>Alguém sabe se a Rocketseat está contratando?</p></div>
+                
+                <div class="postComment">
+                    <img class="avatar" src="./account_circle-24px.svg" />
+                    <p><strong>Diego Fernandes</strong><small>25 out 2019</small><br><i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper ex non lacus posuere, vel placerat tellus eleifend."</i></p>
+                </div>                
+            
+            <div class="postComment">
+                    <img class="avatar" src="./account_circle-24px.svg" />
+                    <p><strong>Diego Fernandes</strong><small>25 out 2019</small><br><i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper ex non lacus posuere, vel placerat tellus eleifend."</i></p>
+                </div>
+            </div>              
+          
+    </main>
+    <footer>Rocketseat</footer>
+    <script type="text/javascript" src=""></script>
+</body></html>
